@@ -74,6 +74,77 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #c5d0ef;
+  border-radius: 4px;
+  background-color: #eef2fb;
+}
+
+.participants-section h5 {
+  margin-bottom: 6px;
+  color: #3949ab;
+  font-size: 16px;
+}
+
+.participants-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participants-section li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.participants-section li + li {
+  margin-top: 4px;
+}
+
+.participant-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  display: grid;
+  flex: 0 0 30px;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #666;
+}
+
+.participant-remove:hover,
+.participant-remove:focus-visible {
+  border-color: #ef9a9a;
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #c62828;
+  outline-offset: 2px;
+}
+
+.participant-remove svg {
+  width: 16px;
+  height: 16px;
+}
+
+.participants-empty {
+  color: #666;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
